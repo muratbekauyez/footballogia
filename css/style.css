@@ -1,0 +1,347 @@
+html {
+    font-family: "Times New Roman", Georgia, Serif;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+body {
+    margin: 0;
+}
+header {
+    padding: 20px;
+    padding-left: 70px;
+    background-color: #cce6ff;
+    color: #fff;
+}
+/* #sticky is an id for making the navigation bar and the logo to stay on top of the screen */
+#sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+/* #editorAddon is an id for displaying the interface for adding <br> and <a></a> 
+elements to the input boxes  */
+#editorAddon {
+    position: absolute;
+    top: 200px;
+    left: 50px;
+    border-style: solid;
+    border-color: #000;
+    border-width: 2px;
+    padding: 10px;
+}
+#editorAddon input {
+    margin-bottom: 5px;
+}
+#editorAddon button {
+    margin-bottom: 20px;
+}
+#logo {
+    display: inline;
+    min-width: 30%;
+}
+#logo h1 {
+    display: inline;
+    font-size: 2.5em;
+    font-style: oblique;
+}
+#logo img {
+    display: inline-block;
+    width: 40px;
+}
+/* #login is an id for styling the login and logoff button */
+#login {
+    float: right;
+    padding: 10px;
+    margin-top: 10px;
+    margin-right: 40px;
+    background-color: #afd275;
+    text-align: center;
+    color: #000;
+    border-radius: 25%;
+}
+a {
+    text-decoration: none;
+}
+a:link, a:visited {
+    color: #000;
+}
+/* #homeNav is an id for the div box containing the panels with pictures on the home page */
+#homeNav {
+    font-size: 0;
+}
+/* .homePanels is a class for styling each individual panel on the home page */
+.homePanels#history, .homePanels#rules, .homePanels#techniques {
+    width: 33.333333%;
+}
+.homePanels#people, .homePanels#matches, .homePanels#tactics, .homePanels#quizzes {
+    width: 49.999999%;
+}
+.homePanels {
+    height: 400px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-size: cover;
+    background-position: center;
+}
+.homePanels div {
+    background-color: rgb(40,40,40);
+    background-color: rgba(40,40,40,0.7);
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+}
+.homePanels div:hover {
+    background: none;
+    background-color: rgba(40,40,40,0.1);
+}
+.homePanels:hover {
+    transform: scale(1.001);
+}
+.homePanels#history {
+    background-image: url("../images/photo_01.jpg");
+}
+.homePanels#rules {
+    background-image: url("../images/photo_02.jpg");
+}
+.homePanels#techniques {
+    background-image: url("../images/photo_03.jpg");
+}
+.homePanels#people {
+    background-image: url("../images/photo_04.jpg");
+}
+.homePanels#matches {
+    background-image: url("../images/photo_05.jpg");
+}
+.homePanels#tactics {
+    background-image: url("../images/photo_06.jpg");
+}
+.homePanels#quizzes {
+    background-image: url("../images/photo_07.jpg");
+}
+/* nav is the element for styling the navigation bar on top of the website pages */
+nav {
+    background-color: #c1c8e4;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+nav ul {
+	list-style-type: none;
+}
+nav li {
+	float: left;
+}
+nav a:link, nav a:visited {
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    font-size: 1.0em;
+    color: #000;
+}
+nav a:hover, #login:hover, .thisPage {
+    background-color: #84ceeb;
+}
+nav a:active, #login:active {
+    background-color: #5ab9ba;
+}
+/* #content is an id for section elements that contain website data */
+#content {
+    width: 98%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 10px auto 10px auto;
+    background-color: #5ab9ba;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+    border-top-left-radius: 40px 20px;
+    border-top-right-radius: 40px 20px;
+    border-bottom-left-radius: 30px 40px;
+    border-bottom-right-radius: 30px 40px;
+}
+#content h2 {
+    margin: inherit;
+    margin-top: 0;
+    text-align: center;
+    font-size: 2em;
+}
+fieldset {
+    width: 40%;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+fieldset input:not(.radio) {
+    margin-bottom: 10px;
+    width: 90%;
+}
+/* .submit is a class for styling submit buttons on forms on the website */
+/* .readMore is a class for styling the read more button on
+the pages that contain blog posts */
+.submit, .readMore {
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border-color: #e8e8e8;
+    text-align: center;
+}
+/* .delete is a class for styling the delete buttons in a particular color and look */
+.delete {
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.delete:hover {
+    background-color: #f00;
+}
+/* .bigBox and .fixBox are classes for styling textarea elements on the website */
+.bigBox {
+    height: 200px;
+    width: 90%;
+    resize: none;
+}
+.fixBox {
+    height: 100px;
+    width: 90%;
+    resize: none;
+}
+/* .checkQuiz is a class for styling the button for checking the answers to a quiz */
+.checkQuiz {
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* .blogPost is a class for styling blog entries on website pages */
+.blogPost {
+    padding: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border-color: #fff;
+}
+.blogPost img {
+    width: 200px;
+    height: auto;
+}
+.blogPost p {
+    display: inline;
+    padding: 20px;
+    vertical-align: top;
+}
+.blogPost input {
+    margin: 5px;
+}
+/* #blogText amd #blogHead is an id for styling the appearance of an opened blog entry */
+#blogText {
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-indent: 2em;
+}
+#blogHead {
+    text-align: center;
+}
+/* .results class and #quizText id are for styling the results of a quiz */
+.results {
+    font-size: 3em;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #000;
+    margin: 50px 300px 50px 300px;
+    text-align: center;
+    background-color: #afd275;
+}
+#quizText {
+    margin: 20px auto 20px auto;
+    width: 40%;
+    font-size: 2em;
+    text-align: center;
+}
+table img {
+    width: 200px;
+    height: auto;
+}
+table, th, td {
+    margin: 20px;
+    width: 95%;
+    padding: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #000;
+    border-collapse: collapse;
+}
+th {
+    text-align: center;
+}
+tr:hover {
+    background-color: #f6f6f6;
+}
+/* the .pCol# classes are for fixing the width of the table columns on the people page */
+.pCol1 {
+    width: 20%;
+    text-align: center;
+}
+.pCol2 {
+    width: 50%;
+}
+.pCol3 {
+    width: 20%;
+    text-align: center;
+}
+.pCol4 {
+    width: 10%;
+    text-align: center;
+}
+/* the .mCol# classes are for fixing the width of the table columns on the matches page */
+.mCol1 {
+    width: 30%;
+}
+.mCol2 {
+    width: 10%;
+    text-align: center;
+}
+.mCol3 {
+    width: 40%;
+}
+.mCol4 {
+    width: 10%;
+}
+.mCol5 {
+    width: 10%;
+    text-align: center;
+}
+.mCol6 {
+    width: 50%;
+    text-align: center;
+}
+/* the .qCol# classes are for fixing the width of the table columns on the quizzes page */
+.qCol1 {
+    width: 30%;
+}
+.qCol2 {
+    width: 50%;
+}
+.qCol3 {
+    width: 10%;
+    text-align: center;
+}
+.qCol4 {
+    width: 10%;
+    text-align: center;
+}
+/* .breaker class is used for leaving extra spaces between elements */
+.breaker {
+    margin-bottom: 10px;
+}
+/* .clear class is used for clearing the effects after floating elements on the page */
+.clear {
+    clear: both;
+}
